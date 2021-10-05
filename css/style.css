@@ -34,15 +34,16 @@ body {
   padding: 0 15px;
 }
 
-.link, .logo-accent {
+.link,
+.logo-accent {
   color: var(--text-primary-color);
   transition: color var(--animation-timer) var(--animation-cube);
 }
 
 .link:hover,
 .link:focus,
-.link .logo-accent:hover,
-.link .logo-accent:focus,
+.logo:hover .logo-accent,
+.logo:focus .logo-accent,
 .header-link.current {
   color: var(--accent-color);
 }
