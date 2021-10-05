@@ -57,8 +57,9 @@
               <svg class="icon-contact" width="10" height="16">
                 <use
                   href="./images/icons/symbol-defs.svg#icon-smartphone"
-                ></use></svg>+38 096 111 11 11</a
-            >
+                ></use></svg
+              >+38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -69,7 +70,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button button" type="button">
+          <button class="hero-button button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -147,31 +148,43 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="service-list list">
             <li class="service-list-item">
-              <a href="" class="service-link link"
-                ><img
-                  src="./images/home/about/about-img1.jpg"
-                  width="370"
-                  height="294"
-                  alt="рабочий стол с компьютером"
-              /></a>
+              <a href="" class="service-link link">
+                <div class="service-thumb">
+                  <img
+                    src="./images/home/about/about-img1.jpg"
+                    width="370"
+                    height="294"
+                    alt="рабочий стол с компьютером"
+                  />
+                  <div class="service-description">Десктопные приложения</div>
+                </div>
+              </a>
             </li>
             <li class="service-list-item">
               <a href="" class="service-link link"
-                ><img
-                  src="./images/home/about/about-img2.jpg"
-                  width="370"
-                  height="294"
-                  alt="рабочий стол с ноутбуком"
-              /></a>
+                ><div class="service-thumb">
+                  <img
+                    src="./images/home/about/about-img2.jpg"
+                    width="370"
+                    height="294"
+                    alt="рабочий стол с ноутбуком"
+                  />
+                  <div class="service-description">Мобильные приложения</div>
+                </div></a
+              >
             </li>
             <li class="service-list-item">
               <a href="" class="service-link link"
-                ><img
-                  src="./images/home/about/about-img3.jpg"
-                  width="370"
-                  height="294"
-                  alt="планшет"
-              /></a>
+                ><div class="service-thumb">
+                  <img
+                    src="./images/home/about/about-img3.jpg"
+                    width="370"
+                    height="294"
+                    alt="планшет"
+                  />
+                  <div class="service-description">Дизайнерские решения</div>
+                </div></a
+              >
             </li>
           </ul>
         </div>
@@ -346,7 +359,7 @@
               <div class="about-list-content">
                 <h3 class="about-title">Михаил Ермаков</h3>
                 <p lang="en" class="about-description">UI Designer</p>
-                <ul class="about-social-list list ">
+                <ul class="about-social-list list">
                   <li class="about-social-item">
                     <a href="" class="about-social-link link">
                       <svg class="social-icon" width="20" height="20">
@@ -422,12 +435,13 @@
               ></a>
             </li>
             <li class="clients-list-item">
-              <a href="" class="client-list-link link"
-                ><svg class="icon-client" width="106" height="60">
+              <a href="" class="client-list-link link">
+                <svg class="icon-client" width="106" height="60">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-logo-clients3"
-                  ></use></svg
-              ></a>
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="clients-list-item">
               <a href="" class="client-list-link link"
@@ -485,21 +499,27 @@
               <li class="footer-social-item">
                 <a href="" class="footer-social-link link">
                   <svg class="footer-social-icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+                    <use
+                      href="./images/icons/symbol-defs.svg#icon-instagram"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="" class="footer-social-link link">
                   <svg class="footer-social-icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                    <use
+                      href="./images/icons/symbol-defs.svg#icon-twitter"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a href="" class="footer-social-link link">
                   <svg class="footer-social-icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                    <use
+                      href="./images/icons/symbol-defs.svg#icon-facebook"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -516,5 +536,13 @@
       </div>
     </footer>
     <!-- *Footer -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-btn" data-modal-close></button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
